@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CIF_A</fullName>
+    <active>true</active>
+    <description>The CIF should start for a letter</description>
+    <errorConditionFormula>NOT REGEX(CIF__c ,&quot;([A-Z]|[a-z]){1}[0-9]{8}&quot;)</errorConditionFormula>
+    <errorDisplayField>CIF__c</errorDisplayField>
+    <errorMessage>The CIF should start for a letter and them 8 numbers</errorMessage>
+</ValidationRule>

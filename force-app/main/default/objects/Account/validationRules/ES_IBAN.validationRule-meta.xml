@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ES_IBAN</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT REGEX( IBAN__c , &quot;([ES]{2}[0-9]{20})&quot;)</errorConditionFormula>
+    <errorDisplayField>IBAN__c</errorDisplayField>
+    <errorMessage>IBAN should start for &quot;ES&quot; and then 20 numbers</errorMessage>
+</ValidationRule>
